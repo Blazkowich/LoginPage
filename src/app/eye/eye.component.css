@@ -1,0 +1,132 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  pointer-events: none;
+}
+
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.login-container {
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 0 20px #ff0000;
+  animation: levitate 3s ease-in-out infinite, glow 5s ease-in-out infinite;
+}
+
+.svg-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.svg-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+}
+
+.svg-layer:nth-child(1) { z-index: 996; }
+.svg-layer:nth-child(2) { z-index: 997; }
+.svg-layer:nth-child(3) { z-index: 998; }
+.svg-layer:nth-child(4) { z-index: 999; }
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  color: #ff0000;
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  pointer-events: none;
+  user-select: none;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 270px;
+  padding: 10px;
+  border: 2px solid #ff0000;
+  background-color: #000;
+  color: #fff;
+  border-radius: 30px;
+  outline: none;
+  font-size: 14px;
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0px 1000px #000 inset !important;
+  -webkit-text-fill-color: #fff !important;
+}
+
+input[type="text"]::-webkit-autocomplete {
+  background-color: #000;
+  color: #fff;
+}
+
+button[type="submit"] {
+  width: 100px;
+  padding: 10px;
+  background-color: #ff0000;
+  border: none;
+  color: #000000;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 auto;
+  display: block;
+  font-weight: bold;
+  user-select: none;
+}
+
+button[type="submit"]:hover {
+  background-color: #ff4500;
+}
+
+@keyframes levitate {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 20px #ff0000;
+  }
+  50% {
+    box-shadow: 0 0 40px #ff4500, 0 0 80px #ff4500;
+  }
+}
