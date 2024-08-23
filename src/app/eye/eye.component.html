@@ -4,7 +4,7 @@
       <img src="assets/eye/circle.png" alt="Circle" class="svg-layer" />
       <img src="assets/eye/light_reflection.png" alt="Light Reflection" class="svg-layer" />
       <img src="assets/eye/reflection.png" alt="Reflection" class="svg-layer" />
-      <img src="assets/eye/eye.png" alt="Eye" class="svg-layer" />
+      <img src="assets/eye/eye.png" alt="Eye" class="svg-layer" [ngStyle]="{'top': eyePosition.top, 'left': eyePosition.left}"/>
     </div>
     <form>
       <div class="form-group">
