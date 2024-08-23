@@ -3,7 +3,6 @@ body, html {
   padding: 0;
   height: 100%;
   font-family: 'Roboto', sans-serif;
-  pointer-events: none;
 }
 
 .login-wrapper {
@@ -43,7 +42,6 @@ body, html {
   left: 0;
   width: 100%;
   height: auto;
-  pointer-events: none;
 }
 
 .svg-layer:nth-child(1) { z-index: 996; }
