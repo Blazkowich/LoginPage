@@ -57,8 +57,8 @@ export class EyeComponent implements OnInit {
 
   private setInitialPosition() {
     this.eyePosition = {
-      top: `${(200 / 2) - (this.eyeSize / 2)}px`,
-      left: `${(200 / 2) - (this.eyeSize / 2)}px`
+      top: `${(200 / 2) - (this.eyeSize / 2) - 60}px`,
+      left: `${(200 / 2) - (this.eyeSize / 2) - 60}px`
     };
   }
 }
